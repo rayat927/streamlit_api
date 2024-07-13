@@ -39,8 +39,8 @@ def main():
                                      float(totChol), float(sysBP), 
                                      float(diaBP), float(BMI),float(heartRate), float(glucose)]])
 
-        output = prediction[0]
-        if output == '1':
+        output = int(prediction[0])
+        if output == 1:
             text = 'High risk'
         else:
             text = 'Low risk'
